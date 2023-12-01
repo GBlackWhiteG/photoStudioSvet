@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "Golos UI";
+  src: url("./fonts/Golos-UI_Bold.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.Services {
+  margin-top: 150px;
+}
+
+h2 {
+  color: #ffffff;
+}
+
+.items__Services {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+}
+
+.item__Services {
+  color: #ffffff;
+  background-color: #353535;
+}
+
+.item__Services span {
+  display: block;
+}
+
+.item-content {
+  padding: 20px;
+}
+
+.item-content h3 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.item-content span {
+  font-family: Montserrat;
+  font-size: 16px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  margin-bottom: 5px;
+}
+
+.item-content button {
+  font-family: Golos UI;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  background-color: #ffffff;
+  letter-spacing: 1.2px;
+  padding: 13px 36px;
+  margin-top: 38px;
+}
+
+.item-content button:hover {
+  cursor: pointer;
+}
+
+.item__Services img {
+  width: 100%;
+}
+
+
+@media (max-width: 1300px) {
+  .items__Services {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .Services .container {
+    max-width: 710px;
+  }
+
+  .items__Services {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 625px) {
+  .items__Services {
+    grid-template-columns: 1fr;
+  }
+}

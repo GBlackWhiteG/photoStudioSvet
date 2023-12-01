@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.Rooms {
+  background-color: #ffffff;
+}
+
+.content__Rooms {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+  row-gap: 50px;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.text__Rooms {
+  max-width: 560px;
+}
+
+.text__Rooms h2 {
+  color: black;
+}
+
+.prices__Rooms {
+  display: flex;
+  gap: 28px;
+  margin: 40px 0 35px 0;
+}
+
+.prices__Rooms h3 {
+  font-family: Montserrat;
+  font-size: 30px;
+}
+
+.prices__Rooms span {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.room-button {
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 700;
+  border: none;
+  background-color: transparent;
+  position: relative;
+}
+
+.room-button::after {
+  content: "";
+  width: 16px;
+  height: 30px;
+  background-image: url("img/arrow.svg");
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -26px;
+}
+
+.img__Rooms {
+  max-width: 100%;
+}
+
+
+@media (max-width: 1024px) {
+  .content__Rooms {
+    flex-direction: column;
+  }
+}

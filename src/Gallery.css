@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.Gallery {
+  margin-top: 150px;
+}
+
+.Gallery .container {
+  max-width: 1030px;
+}
+
+.Gallery h2 {
+  color: #ffffff;
+}
+
+.content__Gallery {
+  columns: 3;
+  gap: 20px;
+}
+
+.content__Gallery>div {
+  margin-bottom : 20px;
+}
+
+.content__Gallery>div>img {
+  width: 100%;
+}
+
+
+@media (max-width: 1024px) {
+  .Gallery .container {
+    max-width: 684px;
+  }
+
+  .content__Gallery {
+    columns: 2;
+    gap: 20px;
+  }
+}

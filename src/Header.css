@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "Golos UI";
+  src: url("./fonts/Golos-UI_Bold.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.Header {
+  height: 100vh;
+  max-height: 1500px;
+  font-family: Golos UI;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #131313;
+  background-image: url("img/main.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 56px;
+}
+
+.Header .logo {
+  width: 38vw;
+  max-width: 615px;
+  min-width: 431px;
+}
+
+.Header h1 {
+  color: #ffffff;
+  font-size: clamp(56px, 5vw, 82px);
+}
+
+.Header h1 span {
+  color: #131313;
+}
+
+.Header p {
+  color: #ffffff;
+  font-family: Golos UI;
+  font-size: clamp(17px, 1.52vw, 25px);
+}
