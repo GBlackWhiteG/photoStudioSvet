@@ -1,10 +1,10 @@
 import './Gallery.css';
-import gal1 from './img/gal1.jpg'
-import gal2 from './img/gal2.jpg'
-import gal3 from './img/gal3.jpg'
-import gal4 from './img/gal4.jpg'
-import gal5 from './img/gal5.jpg'
-import gal6 from './img/gal6.jpg'
+import gal1 from '../../img/gal1.jpg'
+import gal2 from '../../img/gal2.jpg'
+import gal3 from '../../img/gal3.jpg'
+import gal4 from '../../img/gal4.jpg'
+import gal5 from '../../img/gal5.jpg'
+import gal6 from '../../img/gal6.jpg'
 
 function Gallery() {
   return (

@@ -1,22 +1,24 @@
-import React from "react";
-import Header from './Header';
-import About from './About';
-import Rooms from './Rooms';
-import Gallery from './Gallery';
-import Services from './Services';
-import Contacts from './Contacts';
-import Questions from './Questions';
-import Footer from './Footer';
-import logo from './img/logo.svg';
+import React, { useState } from "react";
+import Header from './components/Header/Header';
+import About from './components/About/About';
+import Rooms from './components/Rooms/Rooms';
+import Gallery from './components/Gallary/Gallery';
+import Services from './components/Services/Services';
+import Contacts from './components/Contacts/Contacts';
+import Questions from './components/Questions/Questions';
+import Footer from './components/Footer/Footer';
+import logo from './img/logo2.svg';
 import './App.css'
 
 function App() {
+    const [menuActive, setMenuActive] = useState(false);
+
     return (
         <div className="App">
             <nav className="Navigation">
                 <div className='container'>
-                    <a href="#header"><img className='logo' src={logo} alt="logo"/></a>
-                    <div className='items'>
+                    <a href="#header" className="logo-item"><img className='logo' src={logo} alt="logo"/></a>
+                    <div className={menuActive ? 'items active' : 'items'}>
                         <a href="#about">О студии</a>
                         <a href="#rooms">Залы</a>
                         <a href="#gallery">Галерея</a>
@@ -24,7 +26,7 @@ function App() {
                         <a href="#contacts">Контакты</a>
                         <a href="#questions">Консультация</a>
                     </div>
-                    <span className="burger hide"></span>
+                    <div className="burger-block" onClick={() => setMenuActive(!menuActive)}><span className="burger"></span></div>
                 </div>
             </nav>
             <header id="header" ><Header /></header>

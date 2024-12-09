@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Golos UI";
-  src: url("./fonts/Golos-UI_Bold.ttf");
+  src: url("../../fonts/Golos-UI_Bold.ttf");
 }
 
 * {
@@ -31,7 +31,7 @@
   content: "";
   width: 100%;
   height: 100%;
-  background-image: url("./img/bottom-studio.jpg");
+  background-image: url("../../img/bottom-studio.jpg");
   position: absolute;
   top: 150px;
   left: 220px;

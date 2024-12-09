@@ -1,12 +1,12 @@
 import './Services.css';
-import darkStudio from './img/dark-studio-small.jpg'
-import lightStudio from './img/light-studio-small.jpg'
-import smoke from './img/smoke-mashine.jpg'
-import clothes from './img/clothes.jpg'
-import mirror from './img/mirror.jpg'
-import makeUp from './img/makeup.jpg'
-import beforeAfter from './img/before-after.jpg'
-import people from './img/people.jpg'
+import darkStudio from '../../img/dark-studio-small.jpg'
+import lightStudio from '../../img/light-studio-small.jpg'
+import smoke from '../../img/smoke-mashine.jpg'
+import clothes from '../../img/clothes.jpg'
+import mirror from '../../img/mirror.jpg'
+import makeUp from '../../img/makeup.jpg'
+import beforeAfter from '../../img/before-after.jpg'
+import people from '../../img/people.jpg'
 
 function Services() {
   return (

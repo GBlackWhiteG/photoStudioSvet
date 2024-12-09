@@ -3,8 +3,14 @@
   margin: 0;
 }
 
-.Rooms {
+.bg-light {
+  color: #000000;
   background-color: #ffffff;
+}
+
+.bg-dark {
+  color: #ffffff;
+  background-color: #353535;
 }
 
 .content__Rooms {
@@ -17,11 +23,15 @@
   padding: 40px 0;
 }
 
+.reversed-text {
+  flex-direction: row-reverse;
+}
+
 .text__Rooms {
   max-width: 560px;
 }
 
-.text__Rooms h2 {
+.bg-light .text__Rooms h2 {
   color: black;
 }
 
@@ -49,17 +59,37 @@
   border: none;
   background-color: transparent;
   position: relative;
+  cursor: pointer;
 }
 
-.room-button::after {
+.bg-dark .room-button {
+  color: #ffffff;
+}
+
+.bg-light .room-button::after {
   content: "";
   width: 16px;
   height: 30px;
-  background-image: url("img/arrow.svg");
+  background-image: url("../../img/arrow.svg");
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   right: -26px;
+}
+
+.bg-dark .room-button {
+  padding-left: 30px;
+}
+
+.bg-dark .room-button::before {
+  content: "";
+  width: 16px;
+  height: 30px;
+  background-image: url("../../img/arrow1.svg");
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0px;
 }
 
 .img__Rooms {

@@ -1,5 +1,5 @@
 import './About.css';
-import man from "./img/man-with-photo.jpg"
+import man from "../../img/man-with-photo.jpg"
 
 function About() {
   return (

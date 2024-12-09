@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Golos UI";
+  src: url("./fonts/Golos-UI_Bold.ttf");
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -24,11 +29,28 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .logo {
   max-width: 147px;
   padding: 13px 0;
+}
+
+.logo-item {
+  color: #ffffff;
+  font-family: Golos UI;
+  font-size: 20px;
+  text-decoration: none;
+  position: relative;
+}
+
+.logo-item::after {
+  content: "SVET";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -60px;
 }
 
 .items {
@@ -37,6 +59,7 @@ html {
   display: flex;
   justify-content: space-between;
   gap: 30px;
+  transition: .5s;
 }
 
 .items a {
@@ -46,9 +69,14 @@ html {
 }
 
 
-.burger {
-  color: #ffffff;
+.burger-block {
   display: none;
+  cursor: pointer;
+}
+
+.burger {
+  display: block;
+  color: #ffffff;
   height: 3px;
   width: 30px;
   background-color: #ffffff;
@@ -78,11 +106,24 @@ html {
 
 
 @media (max-width: 1024px) {
-  .burger {
+  .burger-block {
     display: block;
   }
 
   .items {
-    display: none;
+    width: 100%;
+    max-width: 550px;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(150%);
+    background-color: #131313;
+    padding: 50px 0;
+    position: absolute;
+    top: 60px;
+    right: 0;
+  }
+
+  .active {
+    transform: translateX(0%);
   }
 }

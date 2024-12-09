@@ -1,5 +1,5 @@
 import './Questions.css';
-import image from './img/bottom-studio.jpg'
+import image from '../../img/bottom-studio.jpg'
 
 function Questions() {
   return (
